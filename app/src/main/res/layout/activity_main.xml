@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.whf.myapplication.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_t"
+        android:text="实名认证"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#2b8fec"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:layout_below="@+id/tv_t"-->
+    <!--android:id="@+id/tab_layout"-->
+    <!--app:tabSelectedTextColor="#be7a05"-->
+    <!--app:tabTextColor="#0a34f1"-->
+    <!--app:tabIndicatorColor="#be7a05"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="20dp"/>-->
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/vp"-->
+    <!--android:layout_below="@+id/tab_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+    <TextView
+        android:layout_below="@+id/tv_t"
+        android:id="@+id/text_tv"
+        android:text="请输入您的姓名及身份证号:"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:layout_height="40dp" />
+    <view
+        android:layout_below="@+id/text_tv"
+        android:layout_width="match_parent"
+        android:background="#dbd9d9"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:id="@+id/lined"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="姓    名:"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginLeft="6dp"
+            android:layout_width="0dp"
+            android:layout_marginRight="6dp"
+            android:layout_height="1dp"/>
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_gravity="center_vertical"
+            android:maxLength="42"
+            android:hint="请输入姓名"
+            android:inputType="text"
+            />
+    </LinearLayout>
+    <view
+        android:layout_below="@+id/lined"
+        android:layout_width="match_parent"
+        android:background="#dbd9d9"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:id="@+id/laind"
+        android:layout_below="@+id/lined"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:text="身份证:"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginLeft="6dp"
+            android:layout_width="0dp"
+            android:layout_marginRight="6dp"
+            android:layout_height="1dp"/>
+        <EditText
+            android:id="@+id/edit_pas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_gravity="center_vertical"
+            android:maxLength="42"
+            android:hint="请输入身份证号"
+            android:inputType="text"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/but_d"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_tach"
+        android:text="下一步"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
